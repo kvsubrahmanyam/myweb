@@ -4,7 +4,7 @@ node{
  }
  
  stage('Build'){
-    def mvnHome = tool 'maven3'
+    def mvnHome = tool 'maven'
     sh "${mvnHome}/bin/mvn clean package" 
  }
  stage('Send Email'){
